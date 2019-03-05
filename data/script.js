@@ -1,15 +1,11 @@
-
 function send() {
-
-    var url = 'http://192.168.123.210/temp';
-    // var url = window.location.origin + '/temp';
+    var url = window.location.origin + '/temp';
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
         {
-            // callback(xmlHttp.responseText);
             console.log(xmlHttp.responseText);
-            updateUI(28);
+            updateUI(xmlHttp.responseText);
         }
     }
     xmlHttp.open("GET", url, true); // true for asynchronous 
