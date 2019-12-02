@@ -43,4 +43,4 @@
 
 * Author：Wu Han
 * Homepage：http://wuhanstudio.cc
-* Email：wuhanstudio@hust.edu.cn
+* Contact：https://github.com/wuhanstudio/ESP8266-DS18B20/issues
